@@ -328,7 +328,7 @@ rect[fill^="hsl(359,"] {fill: #CE2322!important} /* Do Not Disturb */
 }
 
 .theme-dark .item-2hkk8m {
-	background-color: #686C7B!important;
+	background-color: #686C7B;
 }
 
 .theme-dark .activityText-yGKsKm {
@@ -339,87 +339,7 @@ rect[fill^="hsl(359,"] {fill: #CE2322!important} /* Do Not Disturb */
 	color: white;
 }
 
-/* Right Chat Messages */
-div[data-is-author-self="true"] .contents-2mQqc9 {
-    text-align: right;
-	background: #36CBB0;
-    border-radius: 25px 25px 5px 25px;
-	padding: 10px;
-	margin-right: -30px;
-	min-width: 20px;
-}
-div[data-is-author-self="true"] .avatar-1BDn8e,
-div[data-is-author-self="true"] .header-23xsNx {
-	display: none;
-}
-div[data-is-author-self="true"] .buttonContainer-DHceWr{
-   position: relative;
-    float: left;
-    margin-left: 140px;
-}
-div[data-is-author-self="true"] .contents-2mQqc9 img {
-    right: 16px;
-}
-div[data-is-author-self="true"] .container-1ov-mD {
-    justify-content: flex-end;
-    margin-right: 20px;
-}
-div[data-is-author-self="true"] .markup-2BOw-j.messageContent-2qWWxC {
-	color: #262C40;
-    text-align: right;
-}
-div[data-is-author-self="true"] .headerText-3Uvj1Y {
-	float: right;
-}
-div[data-is-author-self="true"] .username-1A8OIy {
-	float: right;
-    margin-left: 5px;
-}
-div[data-is-author-self="true"] .avatar-1BDn8e {
-    left: unset;
-}
-div[data-is-author-self="true"] .botTag-1un5a6 {
-	float: right;
-}
-div[data-is-author-self="true"] > .repliedMessage-VokQwo:before {
-    transform: rotateY(180deg);
-    right: -46px;
-    left: unset;
-    width: 40px;
-}
-div[data-is-author-self="true"] .repliedMessage-VokQwo {
-    margin-right: 30px;
-	justify-content: flex-end;
-}
-div[data-is-author-self="true"] .compact-T3H92H .username-1A8OIy ~ .badges-XRnWAp,
-div[data-is-author-self="true"] .repliedMessage-VokQwo .username-1A8OIy ~ .badges-XRnWAp {
-	margin-left: .25rem;
-	margin-right: 0;
-}
-div[data-is-author-self="true"] .repliedMessage-VokQwo .repliedTextContentIcon-1ivTae {
-	order: 0;
-}
-div[data-is-author-self="true"] .repliedMessage-VokQwo .repliedTextPreview-2NBljf {
-    order: 1;
-}
-div[data-is-author-self="true"] .repliedMessage-VokQwo .badges-XRnWAp {
-    order: 2;
-}
-div[data-is-author-self="true"] .repliedMessage-VokQwo .botTag-1un5a6  {
-    order: 3;
-}
-div[data-is-author-self="true"] .repliedMessage-VokQwo .username-1A8OIy {
-    order: 4;
-}
-div[data-is-author-self="true"] .repliedMessage-VokQwo img {
-    order: 5;
-}
-div[data-is-author-self="true"] .markup-2BOw-j blockquote, 
-div[data-is-author-self="true"] .markup-2BOw-j pre {
-	text-align: left;
-	max-width: unset;
-}
-div[data-is-author-self="true"] .headerText-3Uvj1Y {
-	margin-left: .25rem;
-	margin-right: 0;
+/* Fixed the Discord Nitro 'd' */
+path[d="M121.474 3.41937V12.6254H118.347V10.9596C118.113 11.5441 117.675 12.0701 117.149 12.3916C116.535 12.7423 115.863 12.9177 115.161 12.8884C114.518 12.9177 113.875 12.7131 113.32 12.3624C112.794 12.0117 112.356 11.5148 112.093 10.9303C111.8 10.2874 111.654 9.58596 111.654 8.88455C111.625 8.15391 111.8 7.42327 112.093 6.78031C112.385 6.16657 112.853 5.66974 113.408 5.31903C113.992 4.96833 114.665 4.79297 115.337 4.79297C116.827 4.79297 117.821 5.43593 118.347 6.72186V3.41937H121.474ZM117.909 10.0243C118.23 9.70286 118.405 9.26448 118.376 8.82609C118.376 8.38771 118.201 7.94933 117.909 7.65707C117.178 7.04334 116.126 7.04334 115.366 7.65707C115.044 7.97855 114.869 8.38771 114.898 8.82609C114.869 9.26448 115.044 9.70286 115.366 10.0243C115.717 10.3458 116.155 10.4919 116.623 10.4919C117.09 10.5212 117.558 10.3458 117.909 10.0243Z"] {
+	fill: white!important;
 }
