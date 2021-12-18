@@ -1,6 +1,6 @@
 /**
 * @name coolcord
-* @version 1.0.0 alpha
+* @version 1.1.0
 * @description Give Discord a cool new look using soft cool colors and a friendly design.
 * @author ThemeSchemer
 */
@@ -67,6 +67,53 @@
 	display: none;
 }
 
+/* Square Avatars */
+.avatar-37jOim {
+	border-radius: 15px;
+}
+
+.avatar-1BDn8e,
+.avatar-SmRMf2 foreignObject,
+.avatar-3uk_u9 foreignObject {
+	mask: none;
+	border-radius: 15%!important;
+}
+
+.avatarHintInner-1TvA8u,
+.avatar-37jOim foreignObject,
+.avatarHint-2A3RNb foreignObject {
+	mask: none;
+	border-radius: 10px!important;
+}
+
+.avatar-37jOim rect {
+	display: none;
+}
+
+/* Spoilered Images */
+.spoilerWarning-2aAZq1::before {
+	width: 175px;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	visibility: visible;
+	border-radius: 5px;
+	border: solid 3px white;
+	content: 'Click To See Spoiler';
+}
+
+.spoilerWarning-2aAZq1 {
+	visibility: hidden;
+}
+
+/* Channel Header Icons */
+path[d="M12 3C13.417 3 14.71 3.5 15.734 4.321L5.99805 14.058C5.99805 14.0479 5.99856 14.038 5.99907 14.0283C5.99956 14.0188 6.00005 14.0094 6.00005 14V9C6.00005 5.686 8.68605 3 12 3Z"],
+path[d="M8.957 19.5718L9.52877 19H15.4449C14.7519 20.19 13.4759 21 11.9999 21C10.7748 21 9.68752 20.442 8.957 19.5718Z"],
+path[d="M18 10.5283L10.5287 18H21V17C19.344 17 18 15.657 18 14V10.5283Z"],
+path[d="M21.178 1.70703L22.592 3.12103L4.12103 21.593L2.70703 20.178L21.178 1.70703Z"] {
+	fill: #CE2322!important;
+}
+
 /* Channel Icons */
 
 .iconContainer-1BBaeJ[aria-label="Voice"] svg path {
@@ -99,6 +146,11 @@ button[aria-label="Open GIF picker"] svg path {
 	d: path("M2.5 2.5C1.11929 2.5 0 3.61929 0 5V19C0 20.3807 1.11929 21.5 2.5 21.5H21.5C22.8807 21.5 24 20.3807 24 19V5C24 3.61929 22.8807 2.5 21.5 2.5H2.5ZM1 5C1 4.17157 1.67157 3.5 2.5 3.5H21.5C22.3284 3.5 23 4.17157 23 5V19C23 19.8284 22.3284 20.5 21.5 20.5H2.5C1.67157 20.5 1 19.8284 1 19V5ZM10.5192 9.5V10.6538H5.90385V14.1154H9.36539V12.9615H7.05769V11.8077H10.5192V15.2692H4.75V9.5H10.5192ZM11.6731 15.2692V9.5H12.8269V15.2692H11.6731ZM13.9808 15.2692V9.5H19.75V10.6538H15.1346V11.8077H17.4423V12.9615H15.1346V15.2692H13.9808Z") !important;
 }
 
+/* Call Avatar Statuses */
+.callAvatarMask-1SLlRi .status-1WEaea {
+	background: transparent;
+}
+
 /* Anims and stuff*/
 
 button[aria-label="User Settings"] .contents-18-Yxp:hover {
@@ -126,7 +178,7 @@ button[aria-label="Deafen"] .contents-18-Yxp:hover {
 
 @keyframes UserSettings {
   0% {
-    transform:;
+    transform: none;
   }
   50% {
     transform: rotate(90deg) scale(1.2);
@@ -138,7 +190,7 @@ button[aria-label="Deafen"] .contents-18-Yxp:hover {
 
 @keyframes AudioControls {
   0% {
-    transform:;
+    transform: none;
   }
   100% {
     transform: rotate(360deg);
@@ -285,4 +337,89 @@ rect[fill^="hsl(359,"] {fill: #CE2322!important} /* Do Not Disturb */
 
 .theme-dark roleColor-rz2vM0 {
 	color: white;
+}
+
+/* Right Chat Messages */
+div[data-is-author-self="true"] .contents-2mQqc9 {
+    text-align: right;
+	background: #36CBB0;
+    border-radius: 25px 25px 5px 25px;
+	padding: 10px;
+	margin-right: -30px;
+	min-width: 20px;
+}
+div[data-is-author-self="true"] .avatar-1BDn8e,
+div[data-is-author-self="true"] .header-23xsNx {
+	display: none;
+}
+div[data-is-author-self="true"] .buttonContainer-DHceWr{
+   position: relative;
+    float: left;
+    margin-left: 140px;
+}
+div[data-is-author-self="true"] .contents-2mQqc9 img {
+    right: 16px;
+}
+div[data-is-author-self="true"] .container-1ov-mD {
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+div[data-is-author-self="true"] .markup-2BOw-j.messageContent-2qWWxC {
+	color: #262C40;
+    text-align: right;
+}
+div[data-is-author-self="true"] .headerText-3Uvj1Y {
+	float: right;
+}
+div[data-is-author-self="true"] .username-1A8OIy {
+	float: right;
+    margin-left: 5px;
+}
+div[data-is-author-self="true"] .avatar-1BDn8e {
+    left: unset;
+}
+div[data-is-author-self="true"] .botTag-1un5a6 {
+	float: right;
+}
+div[data-is-author-self="true"] > .repliedMessage-VokQwo:before {
+    transform: rotateY(180deg);
+    right: -46px;
+    left: unset;
+    width: 40px;
+}
+div[data-is-author-self="true"] .repliedMessage-VokQwo {
+    margin-right: 30px;
+	justify-content: flex-end;
+}
+div[data-is-author-self="true"] .compact-T3H92H .username-1A8OIy ~ .badges-XRnWAp,
+div[data-is-author-self="true"] .repliedMessage-VokQwo .username-1A8OIy ~ .badges-XRnWAp {
+	margin-left: .25rem;
+	margin-right: 0;
+}
+div[data-is-author-self="true"] .repliedMessage-VokQwo .repliedTextContentIcon-1ivTae {
+	order: 0;
+}
+div[data-is-author-self="true"] .repliedMessage-VokQwo .repliedTextPreview-2NBljf {
+    order: 1;
+}
+div[data-is-author-self="true"] .repliedMessage-VokQwo .badges-XRnWAp {
+    order: 2;
+}
+div[data-is-author-self="true"] .repliedMessage-VokQwo .botTag-1un5a6  {
+    order: 3;
+}
+div[data-is-author-self="true"] .repliedMessage-VokQwo .username-1A8OIy {
+    order: 4;
+}
+div[data-is-author-self="true"] .repliedMessage-VokQwo img {
+    order: 5;
+}
+div[data-is-author-self="true"] .markup-2BOw-j blockquote, 
+div[data-is-author-self="true"] .markup-2BOw-j pre {
+	text-align: left;
+	max-width: unset;
+}
+div[data-is-author-self="true"] .headerText-3Uvj1Y {
+	margin-left: .25rem;
+	margin-right: 0;
 }
